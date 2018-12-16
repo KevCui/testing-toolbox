@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 # HOW TO USE:
-# ~$ chmod +x jwtDecoder.sh
 # ~$ ./jwtDecoder.sh "<JWT token>"
 
 if [[ -z $(command -v jq) ]]; then

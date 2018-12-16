@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 # HOW TO USE:
-# ~$ chmod +x letterCount.sh
 # ~$ ./letterCount.sh '<text>'
 
 _STR_VAR="$*"

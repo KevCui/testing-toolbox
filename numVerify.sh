@@ -3,7 +3,7 @@
 # HOW TO USE:
 #
 # Get access_key from https://numverify.com
-# ~$ chmod +x numVerify.sh
+#
 # ~$ export NUMVERIFY_KEY='<your-access-key>'
 #
 # 1. Query a phone number:
