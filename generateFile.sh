@@ -23,24 +23,24 @@ print_help() {
 }
 
 while getopts ":o:l:e:s:" opt; do
-  case $opt in
-    o)
-      _NAME_OPTION="$OPTARG"
-      ;;
-    l)
-      _NAME_LENGTH="$OPTARG"
-      ;;
-    e)
-      _FILE_ECTENTION="$OPTARG"
-      ;;
-    s)
-      _FILE_SIZE="$OPTARG"
-      ;;
-    \?)
-      echo "Invalid option: -$OPTARG" >&2
-      print_help
-      ;;
-  esac
+    case $opt in
+        o)
+            _NAME_OPTION="$OPTARG"
+            ;;
+        l)
+            _NAME_LENGTH="$OPTARG"
+            ;;
+        e)
+            _FILE_ECTENTION="$OPTARG"
+            ;;
+        s)
+            _FILE_SIZE="$OPTARG"
+            ;;
+        \?)
+            echo "Invalid option: -$OPTARG" >&2
+            print_help
+            ;;
+    esac
 done
 
 _FILE=$(< /dev/urandom tr -cd "$_NAME_OPTION" | head -c "$_NAME_LENGTH")"$_FILE_ECTENTION"
