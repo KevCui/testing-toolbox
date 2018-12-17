@@ -3,8 +3,7 @@
 # HOW TO USE
 # ~$ ./androidNetworkConfigure.sh <path_to_AndroidManifest.xml>
 
-_ROOT="$1"
-_DIR="$_ROOT/android/src/main/"
+_DIR="$1"
 _XML="$_DIR/res/xml/network_security_config.xml"
 _MANIFEST="$_DIR/AndroidManifest.xml"
 _TMP="$_MANIFEST.tmp"
