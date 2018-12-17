@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # HOW TO USE
-# ~$ ./caseCovert.sh -t "<text>" -aAcCis
+# ~$ ./caseConverter.sh -t "<text>" -aAcCis
 #
 # Covert options:
 #  -a     lower case
@@ -56,7 +56,7 @@ if [ -z "$_PARAM" ]; then
     echo "  -c      alternating case"
     echo "  -s      sentence case"
     echo "  -i      inverse case"
-    echo -e "\nUsage: caseCovert.sh -t <text> -aAcCis"
+    echo -e "\nUsage: caseConverter.sh -t <text> -aAcCis"
 fi
 
 if [ -n "$_UPPER_CASE" ]; then

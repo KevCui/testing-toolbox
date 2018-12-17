@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # HOW TO USE:
-# ~$ ./letterCount.sh '<text>'
+# ~$ ./letterCounter.sh '<text>'
 
 _STR_VAR="$*"
 _WORDS=("${_STR_VAR//,/ }")

@@ -7,9 +7,9 @@
 # ~$ export NUMVERIFY_KEY='<your-access-key>'
 #
 # 1. Query a phone number:
-#    ~$ ./numVerify.sh <number>
+#    ~$ ./phoneNumVerifier.sh <number>
 # 2. List country codes:
-#    ~$ ./numVerify.sh
+#    ~$ ./phoneNumVerifier.sh
 
 if [[ -z $(command -v jq) ]]; then
     echo "This script will NOT work on your machine."
