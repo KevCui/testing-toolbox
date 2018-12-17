@@ -166,6 +166,8 @@ export NUMVERIFY_KEY='<your-access-key>'
 
 ## androidNetworkConfigure.sh
 
+**[`^        back to top        ^`](#)**
+
 ```
 ~$ ./androidNetworkConfigure.sh <path_to_AndroidManifest.xml>
 ```
