@@ -10,6 +10,7 @@ A toolbox of handy scripts to help with testing, or daily hacking.
     - :floppy_disk: [letterCounter.sh](#letterCountersh): count letters and words in sentence
     - :a: [caseConverter.sh](#caseConvertersh): convert text to lower case, upper case, capitalized case, sentence case, alternating case and inverse case
     - :phone: [phoneNumVerifier.sh](#phoneNumVerifiersh): use [numverify](https://numverify.com) API to verify phone number
+    -  :signal_strength: [androidNetworkConfigure.sh](#androidNetworkConfiguresh): configure Android network security setting to trust custom CA on Android 7 and above. More details [here](https://developer.android.com/training/articles/security-config).
 
 ## jwtDecoder.sh
 
@@ -161,4 +162,10 @@ export NUMVERIFY_KEY='<your-access-key>'
   },
   ...
 }
+```
+
+## androidNetworkConfigure.sh
+
+```
+~$ ./androidNetworkConfigure.sh <path_to_AndroidManifest.xml>
 ```
