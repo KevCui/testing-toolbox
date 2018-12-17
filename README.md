@@ -3,13 +3,13 @@
 A toolbox of handy scripts to help with testing, or daily hacking.
 
 - List of scripts
-    - [jwtDecoder.sh](#jwtDecoder.sh): decode JWT token
-    - [urlCoder.sh](#urlCoder.sh): encode or decode URL
-    - [uuidValidator.sh](#uuidValidator.sh): validate GUID/UUID
-    - [fileGenerator.sh](#fileGenerator.sh): generate file with specific file name and file size
-    - [letterCounter.sh](#letterCounter.sh): count letters and words in sentence
-    - [caseConverter.sh](#caseConverter.sh): convert text to lower case, upper case, capitalized case, sentence case, alternating case and inverse case
-    - [phoneNumVerifier.sh](#phoneNumVerifier.sh): use [numverify](https://numverify.com) API to verify phone number
+    - [jwtDecoder.sh](#jwtDecodersh): decode JWT token
+    - [urlCoder.sh](#urlCodersh): encode or decode URL
+    - [uuidValidator.sh](#uuidValidatorsh): validate GUID/UUID
+    - [fileGenerator.sh](#fileGeneratorsh): generate file with specific file name and file size
+    - [letterCounter.sh](#letterCountersh): count letters and words in sentence
+    - [caseConverter.sh](#caseConvertersh): convert text to lower case, upper case, capitalized case, sentence case, alternating case and inverse case
+    - [phoneNumVerifier.sh](#phoneNumVerifiersh): use [numverify](https://numverify.com) API to verify phone number
 
 ## jwtDecoder.sh
 
