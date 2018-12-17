@@ -1,6 +1,6 @@
 # testing-toolbox
 
-A toolbox of handy scripts to help with testing, or daily hacking.
+A toolbox of handy single-file scripts to help with testing, or daily hacking.
 
 - List of scripts
     - :hear_no_evil: [jwtDecoder.sh](#jwtDecodersh): decode JWT token
