@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# HOW TO USE
-
 #/ Usage:
 #    ./androidNetworkConfigure.sh <path_to_AndroidManifest.xml>
 #/
