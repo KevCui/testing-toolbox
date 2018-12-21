@@ -1,7 +1,15 @@
 #!/usr/bin/env bash
 
 # HOW TO USE
-# ~$ ./androidNetworkConfigure.sh <path_to_AndroidManifest.xml>
+
+#/ Usage:
+#    ./androidNetworkConfigure.sh <path_to_AndroidManifest.xml>
+#/
+#/ Options:
+#/   --help: Display this help message
+
+usage() { grep '^#/' "$0" | cut -c4- ; exit 0 ; }
+expr "$*" : ".*--help" > /dev/null && usage
 
 _DIR="$1"
 _XML="$_DIR/res/xml/network_security_config.xml"

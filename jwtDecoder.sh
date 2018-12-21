@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 
-# HOW TO USE:
-# ~$ ./jwtDecoder.sh "<JWT token>"
+#/ Usage:
+#/   ./jwtDecoder.sh "<JWT token>"
+#/
+#/ Options:
+#/   --help: Display this help message
+
+usage() { grep '^#/' "$0" | cut -c4- ; exit 0 ; }
+expr "$*" : ".*--help" > /dev/null && usage
 
 if [[ -z $(command -v jq) ]]; then
     echo "This script will NOT work on your machine."

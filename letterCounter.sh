@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 
-# HOW TO USE:
-# ~$ ./letterCounter.sh '<text>'
+#/ Usage:
+#/   ./letterCounter.sh '<text>'
+#/
+#/ Options:
+#/   --help: Display this help message
+
+usage() { grep '^#/' "$0" | cut -c4- ; exit 0 ; }
+expr "$*" : ".*--help" > /dev/null && usage
 
 _STR_VAR="$*"
 _WORDS=("${_STR_VAR//,/ }")

@@ -1,12 +1,18 @@
 #!/usr/bin/env bash
 
-# HOW TO USE:
-#
-# 1. Encode URL
-#    ~$ ./urlCoder.sh '<URL>'
-#
-# 2. Decode URL
-#    ~$ ./urlCoder.sh -d '<URL>'
+#/ Usage:
+#/ 1. Encode URL
+#/    ./urlCoder.sh '<URL>'
+#/
+#/ 2. Decode URL
+#/    ./urlCoder.sh -d '<URL>'
+#/
+#/ Options:
+#/   -d:     Decode URL
+#/   --help: Display this help message
+
+usage() { grep '^#/' "$0" | cut -c4- ; exit 0 ; }
+expr "$*" : ".*--help" > /dev/null && usage
 
 print_help() {
     echo "Encode usage: urlCoder.sh <URL>"

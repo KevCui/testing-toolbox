@@ -1,15 +1,19 @@
 #!/usr/bin/env bash
 
-# HOW TO USE
-# ~$ ./caseConverter.sh -t "<text>" -aAcCis
-#
-# Covert options:
-#  -a     lower case
-#  -A     upper case
-#  -C     capitalized case
-#  -c     alternating case
-#  -s     sentence case
-#  -i     inverse case
+#/ Usage:
+#/   ./caseConverter.sh -t "<text>" -aAcCis
+#/
+#/ Options:
+#/   -a:     convert text to lower case
+#/   -A:     convert text to upper case
+#/   -C:     convert text to capitalized case
+#/   -c:     convert text to alternating case
+#/   -s:     convert text to sentence case
+#/   -i:     convert text to inverse case
+#/   --help: Display this help message
+
+usage() { grep '^#/' "$0" | cut -c4- ; exit 0 ; }
+expr "$*" : ".*--help" > /dev/null && usage
 
 while getopts ":aAicCst:" opt; do
     case $opt in

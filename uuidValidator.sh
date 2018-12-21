@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 
-# HOW TO USE:
-# ~$ ./uuidValidator.sh '<text>'
+#/ Usage:
+#/   ./uuidValidator.sh '<text>'
+#/
+#/ Options:
+#/   --help: Display this help message
+
+usage() { grep '^#/' "$0" | cut -c4- ; exit 0 ; }
+expr "$*" : ".*--help" > /dev/null && usage
 #
 # command to generate a valid UUID: uuidgen
 
