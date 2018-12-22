@@ -28,10 +28,6 @@ _FILE_ECTENTION=''
 _NAME_LENGTH=16
 _FILE_SIZE='64k'
 
-print_help() {
-    echo "Usage: fileGenerator.sh -o <character_option> -l <name_length> -e <file_extension> -s <file_size>"
-}
-
 while getopts ":o:l:e:s:" opt; do
     case $opt in
         o)
@@ -48,7 +44,7 @@ while getopts ":o:l:e:s:" opt; do
             ;;
         \?)
             echo "Invalid option: -$OPTARG" >&2
-            print_help
+            usage
             ;;
     esac
 done

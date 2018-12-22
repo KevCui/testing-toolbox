@@ -14,11 +14,6 @@
 usage() { grep '^#/' "$0" | cut -c4- ; exit 0 ; }
 expr "$*" : ".*--help" > /dev/null && usage
 
-print_help() {
-    echo "Encode usage: urlCoder.sh <URL>"
-    echo "Decode usage: urlCoder.sh -d <URL>"
-}
-
 while getopts ":d:" opt; do
     case $opt in
         d)
@@ -26,7 +21,7 @@ while getopts ":d:" opt; do
             ;;
         \?)
             echo "Invalid option: -$OPTARG" >&2
-            print_help
+            usage
             ;;
     esac
 done
