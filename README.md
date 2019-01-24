@@ -178,5 +178,5 @@ export NUMVERIFY_KEY='<your-access-key>'
 **[`^        back to top        ^`](#)**
 
 ```
-~$ ./showCurrencyCode | grep -i "<search_keyword>"
+~$ ./showCurrencyCode.sh | grep -i "<search_keyword>"
 ```
