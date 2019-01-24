@@ -11,6 +11,7 @@ A toolbox of handy single-file scripts to help with testing, or daily hacking.
     - :a: [caseConverter.sh](#caseConvertersh): convert text to lower case, upper case, capitalized case, sentence case, alternating case and inverse case
     - :phone: [phoneNumVerifier.sh](#phoneNumVerifiersh): use [numverify](https://numverify.com) API to verify phone number
     -  :signal_strength: [androidNetworkConfigure.sh](#androidNetworkConfiguresh): configure Android network security setting to trust custom CA on Android 7 and above. More details [here](https://developer.android.com/training/articles/security-config).
+    -  :signal_strength: [showCurrencyCode.sh](#showCurrencyCodesh): show list of currency country, name and code. Use `grep` to filter out information.
 
 ## jwtDecoder.sh
 
@@ -170,4 +171,12 @@ export NUMVERIFY_KEY='<your-access-key>'
 
 ```
 ~$ ./androidNetworkConfigure.sh <path_to_AndroidManifest.xml>
+```
+
+## showCurrencyCode.sh
+
+**[`^        back to top        ^`](#)**
+
+```
+~$ ./showCurrencyCode | grep -i "<search_keyword>"
 ```
