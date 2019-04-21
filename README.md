@@ -11,9 +11,10 @@ A toolbox of handy single-file scripts to help with testing, or daily hacking.
     - :a: [caseConverter.sh](#caseConvertersh): convert text to lower case, upper case, capitalized case, sentence case, alternating case and inverse case
     - :phone: [phoneNumVerifier.sh](#phoneNumVerifiersh): use [numverify](https://numverify.com) API to verify phone number
     - :signal_strength: [androidNetworkConfigure.sh](#androidNetworkConfiguresh): configure Android network security setting to trust custom CA on Android 7 and above. More details [here](https://developer.android.com/training/articles/security-config).
-    - :euro: [showCurrencyCode.sh](#showCurrencyCodesh): show list of currency country, name and code. Use `grep` to filter out information.
+    - :euro: [showCurrencyCode.sh](#showCurrencyCodesh): show list of currency country, name and code. Use `grep` to filter out information
     - :clipboard: [loremGenerator.sh](#loremGeneratorsh): generate lorem ipsum
     - :mag: [antideo.sh](#antideosh): call [Antideo](http://www.antideo.com) APIs to validate IP address, phone number or Email address
+    - :mailbox_with_no_mail: [tempmail.js](#tempmailjs): fetch a temp email address from [Tempmail](https://www.temp-mail.org)
 
 ## jwtDecoder.sh
 
@@ -248,4 +249,12 @@ Validate Email address:
   "scam": false,
   "disposable": false
 }
+```
+
+## tempmail.js
+
+**[`^        back to top        ^`](#)**
+
+```
+~$ node tempmail.js
 ```
