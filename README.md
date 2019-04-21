@@ -13,7 +13,7 @@ A toolbox of handy single-file scripts to help with testing, or daily hacking.
     - :signal_strength: [androidNetworkConfigure.sh](#androidNetworkConfiguresh): configure Android network security setting to trust custom CA on Android 7 and above. More details [here](https://developer.android.com/training/articles/security-config).
     - :euro: [showCurrencyCode.sh](#showCurrencyCodesh): show list of currency country, name and code. Use `grep` to filter out information.
     - :clipboard: [loremGenerator.sh](#loremGeneratorsh): generate lorem ipsum
-    - :mag: [antideo.sh](#antideo.sh): call [Antideo](http://www.antideo.com) APIs to validate IP address, phone number or Email address
+    - :mag: [antideo.sh](#antideosh): call [Antideo](http://www.antideo.com) APIs to validate IP address, phone number or Email address
 
 ## jwtDecoder.sh
 
