@@ -13,6 +13,7 @@ A toolbox of handy single-file scripts to help with testing, or daily hacking.
     - :signal_strength: [androidNetworkConfigure.sh](#androidNetworkConfiguresh): configure Android network security setting to trust custom CA on Android 7 and above. More details [here](https://developer.android.com/training/articles/security-config).
     - :euro: [showCurrencyCode.sh](#showCurrencyCodesh): show list of currency country, name and code. Use `grep` to filter out information.
     - :clipboard: [loremGenerator.sh](#loremGeneratorsh): generate lorem ipsum
+    - :mag: [antideo.sh](#antideo.sh): call [Antideo](http://www.antideo.com) APIs to validate IP address, phone number or Email address
 
 ## jwtDecoder.sh
 
@@ -188,4 +189,63 @@ export NUMVERIFY_KEY='<your-access-key>'
 
 ```
 ~$ ./loremGenerator.sh -p <paragraph_num> -l <max_line_length>
+```
+
+## antideo.sh
+
+**[`^        back to top        ^`](#)**
+
+:warning: Antideo provides only **10 requests/hour for free account**, need more requests? [Pay it](https://www.antideo.com/pricing), or tor it.
+
+Validate IP address:
+
+```
+~$ ./antideo.sh -i 1.1.1.1
+{
+  "IP": "1.1.1.1",
+  "health": {
+    "toxic": false,
+    "proxy": {
+      "type": "open",
+      "last_seen": "2019-04-21 00:40:04"
+    },
+    "spam": {
+      "times_reported": 12,
+      "last_seen": "2019-03-13 11:40:09"
+    }
+  }
+}
+```
+
+Validate Phone number:
+
+```
+~$ ./antideo.sh -p +33143253700
+{
+  "phone": "+33143253700",
+  "valid": true,
+  "type": "FIXED_LINE",
+  "location": "Paris",
+  "timezones": [
+    "Europe/Paris"
+  ],
+  "formats": {
+    "E164": "+33143253700",
+    "national": "01 43 25 37 00",
+    "international": "+33 1 43 25 37 00"
+  }
+}
+```
+
+Validate Email address:
+
+```
+~$ ./antideo.sh -m ads@gmail.com
+{
+  "email": "ads@gmail.com",
+  "free_provider": true,
+  "spam": false,
+  "scam": false,
+  "disposable": false
+}
 ```
