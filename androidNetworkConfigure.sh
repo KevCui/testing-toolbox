@@ -35,13 +35,9 @@ echo '<?xml version="1.0" encoding="utf-8"?>
     <base-config>
         <trust-anchors>
             <certificates src="system" />
-        </trust-anchors>
-    </base-config>
-    <debug-overrides>
-        <trust-anchors>
             <certificates src="user" />
         </trust-anchors>
-    </debug-overrides>
+    </base-config>
 </network-security-config>' > "$_XML"
 
 echo "DONE!"
