@@ -25,8 +25,7 @@ if grep -q "networkSecurityConfig" "$_MANIFEST"; then
 fi
 
 cp "$_MANIFEST" "$_TMP"
-cat "$_TMP" | sed -e "/<application/a\\
-android\:networkSecurityConfig=\"@xml\/network_security_config\"" > "$_MANIFEST"
+sed -E 's/<application/<application android:networkSecurityConfig="@xml\/network_security_config"/' < "$_TMP"  > "$_MANIFEST"
 rm "$_TMP"
 
 # Add xml
