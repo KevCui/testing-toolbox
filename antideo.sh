@@ -12,7 +12,7 @@
 #/   -o             Show IP organisation info
 #/
 #/   Email
-#/   -m             Show Email email address check result
+#/   -m             Show Email address check result
 #/
 #/   Phone
 #/   -p             Show phone number check result
@@ -99,7 +99,7 @@ check_args() {
 
 call() {
     # Call API, $1: endpoint URL
-    $_CURL -sSX GET "$1" -H 'cache-control: no-cache' | $_JQ .
+    $_CURL -sS "$1" -H 'cache-control: no-cache' --compressed | $_JQ .
 }
 
 main() {
