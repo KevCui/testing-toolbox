@@ -7,6 +7,16 @@
 #/   --help: Display this help message
 
 usage() { grep '^#/' "$0" | cut -c4- ; exit 0 ; }
+
+padding() {
+    # $1: base64 string
+    local m p=""
+    m=$(( ${#1} % 4 ))
+    [[ "$m" == 2 ]] && p="=="
+    [[ "$m" == 3 ]] && p="="
+    echo "${1}${p}"
+}
+
 expr "$*" : ".*--help" > /dev/null && usage
 
 if [[ -z $(command -v jq) ]]; then
@@ -21,9 +31,8 @@ input=("${input//$'\n'/}")
 input=("${input//' '/}")
 token=$(IFS=$'\n'; echo "${input[*]}")
 
-echo -e "JWT token:\\n${token}"
-
+echo "JWT token: ${token}"
 IFS='.' read -ra ADDR <<< "$token"
-for i in "${ADDR[@]}"; do
-    echo "$i" | base64 -d 2> /dev/null | jq '.' 2> /dev/null
-done
+base64 -d <<< "$(padding "${ADDR[0]}")" | jq
+base64 -d <<< "$(padding "${ADDR[1]}")" | jq
+echo "Signature: ${ADDR[2]}"
