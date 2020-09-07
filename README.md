@@ -21,8 +21,7 @@ A toolbox of handy single-file scripts to help with testing, or daily hacking.
 **[`^        back to top        ^`](#)**
 ```
 ~$ ./jwtDecoder.sh 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJiMDhmODZhZi0zNWRhLTQ4ZjItOGZhYi1jZWYzOTA0NjYwYmQifQ.-xN_h82PHVTCMA9vdoHrcZxH-x5mb11y1537t3rGzcM'
-
-
+JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJiMDhmODZhZi0zNWRhLTQ4ZjItOGZhYi1jZWYzOTA0NjYwYmQifQ.-xN_h82PHVTCMA9vdoHrcZxH-x5mb11y1537t3rGzcM
 {
   "typ": "JWT",
   "alg": "HS256"
@@ -30,6 +29,7 @@ A toolbox of handy single-file scripts to help with testing, or daily hacking.
 {
   "userId": "b08f86af-35da-48f2-8fab-cef3904660bd"
 }
+Signature: -xN_h82PHVTCMA9vdoHrcZxH-x5mb11y1537t3rGzcM
 ```
 
 ## urlCoder.sh
