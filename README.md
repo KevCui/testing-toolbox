@@ -20,7 +20,7 @@ A toolbox of handy single-file scripts to help with testing, or daily hacking.
 
 **[`^        back to top        ^`](#)**
 ```
-~$ ./jwtDecoder.sh 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJiMDhmODZhZi0zNWRhLTQ4ZjItOGZhYi1jZWYzOTA0NjYwYmQifQ.-xN_h82PHVTCMA9vdoHrcZxH-x5mb11y1537t3rGzcM'
+$ ./jwtDecoder.sh 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJiMDhmODZhZi0zNWRhLTQ4ZjItOGZhYi1jZWYzOTA0NjYwYmQifQ.-xN_h82PHVTCMA9vdoHrcZxH-x5mb11y1537t3rGzcM'
 JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJiMDhmODZhZi0zNWRhLTQ4ZjItOGZhYi1jZWYzOTA0NjYwYmQifQ.-xN_h82PHVTCMA9vdoHrcZxH-x5mb11y1537t3rGzcM
 {
   "typ": "JWT",
@@ -37,10 +37,10 @@ Signature: -xN_h82PHVTCMA9vdoHrcZxH-x5mb11y1537t3rGzcM
 **[`^        back to top        ^`](#)**
 
 ```
-~$ ./urlCoder.sh 'https://www.w3schools.com/action_page2.php?text=Hello Günter'
+$ ./urlCoder.sh 'https://www.w3schools.com/action_page2.php?text=Hello Günter'
 https%3A%2F%2Fwww.w3schools.com%2Faction_page2.php%3Ftext%3DHello+G%C3%BCnter
 
-~$ ./urlCoder.sh -d 'https%3A%2F%2Fwww.w3schools.com%2Faction_page2.php%3Ftext%3DHello+G%C3%BCnter'
+$ ./urlCoder.sh -d 'https%3A%2F%2Fwww.w3schools.com%2Faction_page2.php%3Ftext%3DHello+G%C3%BCnter'
 https://www.w3schools.com/action_page2.php?text=Hello+Günter
 ```
 
@@ -49,11 +49,11 @@ https://www.w3schools.com/action_page2.php?text=Hello+Günter
 **[`^        back to top        ^`](#)**
 
 ```
-~$ ./uuidValidator.sh 'x56a4180-h5aa-42ec-a945-5fd21dec0538'
+$ ./uuidValidator.sh 'x56a4180-h5aa-42ec-a945-5fd21dec0538'
 x56a4180-h5aa-42ec-a945-5fd21dec0538
 false
 
-~$ ./uuidValidator.sh '{C56a418065aa426ca9455fd21deC0538}'
+$ ./uuidValidator.sh '{C56a418065aa426ca9455fd21deC0538}'
 C56a4180-65aa-426c-a945-5fd21deC0538
 true
 ```
@@ -64,13 +64,13 @@ true
 
 ```
 1. Generate a 128k txt file, file name contains only numbers:
-~$ ./fileGenerator.sh -o "0-9" -e ".txt" -s 128k
+$ ./fileGenerator.sh -o "0-9" -e ".txt" -s 128k
 
 2. Generate a jpg file, flie name has 12 characters:
-~$ ./fileGenerator.sh -l 12 -e ".jpg"
+$ ./fileGenerator.sh -l 12 -e ".jpg"
 
 3. Generate a 5m mp4 file, flie name has 8 characters, contains capital letters:
-~$ ./fileGenerator.sh -o "A-Z" -l 8 -e ".mp4" -s 5m
+$ ./fileGenerator.sh -o "A-Z" -l 8 -e ".mp4" -s 5m
 ```
 
 ## letterCounter.sh
@@ -78,7 +78,7 @@ true
 **[`^        back to top        ^`](#)**
 
 ```
-~$ ./letterCounter.sh 'So God created man in his own image, in the image of God created he him; male and female created he them.'
+$ ./letterCounter.sh 'So God created man in his own image, in the image of God created he him; male and female created he them.'
 Character: 105
 Word: 22
 ```
@@ -87,17 +87,17 @@ Word: 22
 **[`^        back to top        ^`](#)**
 
 ```
-~$ ./caseCoverter.sh -t 'across the dragoon and the fate' -A
+$ ./caseCoverter.sh -t 'across the dragoon and the fate' -A
 
 Upper case:
 ACROSS THE DRAGOON AND THE FATE
 
-~$ ./caseCoverter.sh -t 'across the dragoon and the fate' -C
+$ ./caseCoverter.sh -t 'across the dragoon and the fate' -C
 
 Capitalized case:
 Across The Dragoon And The Fate
 
-~$ ./caseCoverter.sh -t 'So God created man in his own image, in the image of God created he him; male and female created he them.' -aAcCsi
+$ ./caseCoverter.sh -t 'So God created man in his own image, in the image of God created he him; male and female created he them.' -aAcCsi
 
 Upper case:
 SO GOD CREATED MAN IN HIS OWN IMAGE, IN THE IMAGE OF GOD CREATED HE HIM; MALE AND FEMALE CREATED HE THEM.
@@ -130,7 +130,7 @@ export NUMVERIFY_KEY='<your-access-key>'
 
 ```
 1. Query a phone number:
-~$ ./phoneNumVerifier.sh 14158586273
+$ ./phoneNumVerifier.sh 14158586273
 {
   "valid": true,
   "number": "14158586273",
@@ -146,7 +146,7 @@ export NUMVERIFY_KEY='<your-access-key>'
 
 
 2. List country codes:
-~$ ./phoneNumVerifier.sh
+$ ./phoneNumVerifier.sh
 {
   "AF": {
     "country_name": "Afghanistan",
@@ -173,7 +173,7 @@ export NUMVERIFY_KEY='<your-access-key>'
 **[`^        back to top        ^`](#)**
 
 ```
-~$ ./androidNetworkConfigure.sh <path_to_AndroidManifest.xml>
+$ ./androidNetworkConfigure.sh <path_to_AndroidManifest.xml>
 ```
 
 ## showCurrencyCode.sh
@@ -181,7 +181,7 @@ export NUMVERIFY_KEY='<your-access-key>'
 **[`^        back to top        ^`](#)**
 
 ```
-~$ ./showCurrencyCode.sh | grep -i "<search_keyword>"
+$ ./showCurrencyCode.sh | grep -i "<search_keyword>"
 ```
 
 ## loremGenerator.sh
@@ -189,7 +189,7 @@ export NUMVERIFY_KEY='<your-access-key>'
 **[`^        back to top        ^`](#)**
 
 ```
-~$ ./loremGenerator.sh -p <paragraph_num> -l <max_line_length>
+$ ./loremGenerator.sh -p <paragraph_num> -l <max_line_length>
 ```
 
 ## antideo.sh
@@ -201,7 +201,7 @@ export NUMVERIFY_KEY='<your-access-key>'
 Validate IP address:
 
 ```
-~$ ./antideo.sh -i 1.1.1.1
+$ ./antideo.sh -i 1.1.1.1
 {
   "IP": "1.1.1.1",
   "health": {
@@ -221,7 +221,7 @@ Validate IP address:
 Validate Phone number:
 
 ```
-~$ ./antideo.sh -p +33143253700
+$ ./antideo.sh -p +33143253700
 {
   "phone": "+33143253700",
   "valid": true,
@@ -241,7 +241,7 @@ Validate Phone number:
 Validate Email address:
 
 ```
-~$ ./antideo.sh -m ads@gmail.com
+$ ./antideo.sh -m ads@gmail.com
 {
   "email": "ads@gmail.com",
   "free_provider": true,
@@ -256,7 +256,7 @@ Validate Email address:
 **[`^        back to top        ^`](#)**
 
 ```
-~$ node tempmail.js
+$ node tempmail.js
 ```
 
 ---
