@@ -19,7 +19,8 @@ A toolbox of handy single-file scripts to help with testing, or daily hacking.
 ## jwtDecoder.sh
 
 **[`^        back to top        ^`](#)**
-```
+
+```bash
 $ ./jwtDecoder.sh 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJiMDhmODZhZi0zNWRhLTQ4ZjItOGZhYi1jZWYzOTA0NjYwYmQifQ.-xN_h82PHVTCMA9vdoHrcZxH-x5mb11y1537t3rGzcM'
 JWT token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJiMDhmODZhZi0zNWRhLTQ4ZjItOGZhYi1jZWYzOTA0NjYwYmQifQ.-xN_h82PHVTCMA9vdoHrcZxH-x5mb11y1537t3rGzcM
 {
@@ -36,7 +37,7 @@ Signature: -xN_h82PHVTCMA9vdoHrcZxH-x5mb11y1537t3rGzcM
 
 **[`^        back to top        ^`](#)**
 
-```
+```bash
 $ ./urlCoder.sh 'https://www.w3schools.com/action_page2.php?text=Hello Günter'
 https%3A%2F%2Fwww.w3schools.com%2Faction_page2.php%3Ftext%3DHello+G%C3%BCnter
 
@@ -48,7 +49,7 @@ https://www.w3schools.com/action_page2.php?text=Hello+Günter
 
 **[`^        back to top        ^`](#)**
 
-```
+```bash
 $ ./uuidValidator.sh 'x56a4180-h5aa-42ec-a945-5fd21dec0538'
 x56a4180-h5aa-42ec-a945-5fd21dec0538
 false
@@ -62,7 +63,7 @@ true
 
 **[`^        back to top        ^`](#)**
 
-```
+```bash
 1. Generate a 128k txt file, file name contains only numbers:
 $ ./fileGenerator.sh -o "0-9" -e ".txt" -s 128k
 
@@ -77,7 +78,7 @@ $ ./fileGenerator.sh -o "A-Z" -l 8 -e ".mp4" -s 5m
 
 **[`^        back to top        ^`](#)**
 
-```
+```bash
 $ ./letterCounter.sh 'So God created man in his own image, in the image of God created he him; male and female created he them.'
 Character: 105
 Word: 22
@@ -86,7 +87,7 @@ Word: 22
 
 **[`^        back to top        ^`](#)**
 
-```
+```bash
 $ ./caseCoverter.sh -t 'across the dragoon and the fate' -A
 
 Upper case:
@@ -124,11 +125,11 @@ sO gOD CREATED MAN IN HIS OWN IMAGE, IN THE IMAGE OF gOD CREATED HE HIM; MALE AN
 **[`^        back to top        ^`](#)**
 
 To use this script, it needs to register an API from numverify. And set global variable `NUMVERIFY_KEY`
-```
+```bash
 export NUMVERIFY_KEY='<your-access-key>'
 ```
 
-```
+```bash
 1. Query a phone number:
 $ ./phoneNumVerifier.sh 14158586273
 {
@@ -172,7 +173,7 @@ $ ./phoneNumVerifier.sh
 
 **[`^        back to top        ^`](#)**
 
-```
+```bash
 $ ./androidNetworkConfigure.sh <path_to_AndroidManifest.xml>
 ```
 
@@ -180,7 +181,7 @@ $ ./androidNetworkConfigure.sh <path_to_AndroidManifest.xml>
 
 **[`^        back to top        ^`](#)**
 
-```
+```bash
 $ ./showCurrencyCode.sh | grep -i "<search_keyword>"
 ```
 
@@ -188,7 +189,7 @@ $ ./showCurrencyCode.sh | grep -i "<search_keyword>"
 
 **[`^        back to top        ^`](#)**
 
-```
+```bash
 $ ./loremGenerator.sh -p <paragraph_num> -l <max_line_length>
 ```
 
@@ -200,7 +201,7 @@ $ ./loremGenerator.sh -p <paragraph_num> -l <max_line_length>
 
 Validate IP address:
 
-```
+```bash
 $ ./antideo.sh -i 1.1.1.1
 {
   "IP": "1.1.1.1",
@@ -220,7 +221,7 @@ $ ./antideo.sh -i 1.1.1.1
 
 Validate Phone number:
 
-```
+```bash
 $ ./antideo.sh -p +33143253700
 {
   "phone": "+33143253700",
@@ -240,7 +241,7 @@ $ ./antideo.sh -p +33143253700
 
 Validate Email address:
 
-```
+```bash
 $ ./antideo.sh -m ads@gmail.com
 {
   "email": "ads@gmail.com",
@@ -255,7 +256,7 @@ $ ./antideo.sh -m ads@gmail.com
 
 **[`^        back to top        ^`](#)**
 
-```
+```bash
 $ node tempmail.js
 ```
 
