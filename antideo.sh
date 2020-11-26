@@ -99,7 +99,7 @@ check_args() {
 
 call() {
     # Call API, $1: endpoint URL
-    $_CURL -sS "$1" -H 'cache-control: no-cache' --compressed | $_JQ .
+    $_CURL -sS "$1" -H 'Origin: https://www.antideo.com' --compressed | $_JQ .
 }
 
 main() {
